@@ -1,0 +1,7 @@
+Pages\Base.class
+Pages\BookDetailPage.class
+Pages\Headerpage.class
+Pages\Cartpage.class
+Pages\LoginPage.class
+Pages\HomePage.class
+Pages\Registerpage.class

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-16T22:22:35 IST" name="Default suite" finished-at="2023-12-16T22:22:41 IST" duration-ms="6428">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner_reRunFaildCase@62ddbd7e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-16T22:22:35 IST" name="Default test" finished-at="2023-12-16T22:22:41 IST" duration-ms="6428">
+      <class name="Runner.TestRunner_reRunFaildCase">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner_reRunFaildCase@62ddbd7e]" started-at="2023-12-16T22:22:35 IST" name="setUpClass" finished-at="2023-12-16T22:22:35 IST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@68a305eb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner_reRunFaildCase@62ddbd7e]" started-at="2023-12-16T22:22:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-16T22:22:41 IST" duration-ms="5765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User able to add the item to the card"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User can add the product to cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner_reRunFaildCase@62ddbd7e]" started-at="2023-12-16T22:22:41 IST" name="tearDownClass" finished-at="2023-12-16T22:22:41 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunner_reRunFaildCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
