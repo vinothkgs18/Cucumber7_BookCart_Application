@@ -15,13 +15,16 @@ import io.cucumber.java.en.When;
 
 public class Register_SD{
 
-	public Registerpage rg = new Registerpage(DriverInstance.getDriver());
-	public LoginPage l = new LoginPage(DriverInstance.getDriver());
+	//public Registerpage rg = new Registerpage(DriverInstance.getDriver());
+	//public LoginPage l = new LoginPage(DriverInstance.getDriver());
+	
+	Registerpage registerpage=Registerpage.getInstance();
+	LoginPage loginPage=LoginPage.getInstance();
 
 	@Given("User click on register button in login page")
 	public void user_click_on_register_button_in_login_page() {
 		
-		l.clickRegisterButton();
+		loginPage.clickRegisterButton();
 
 	}
 
@@ -29,12 +32,12 @@ public class Register_SD{
 	public void user_enter_the_and_click_register_button(String string, String string2, String string3,
 			String string4) {
 	
-		rg.doRegisterUser(string, string2, string3, string4);
+		registerpage.doRegisterUser(string, string2, string3, string4);
 	}
 
 	@Then("Verify user register successgully")
 	public void verify_user_register_successgully() {
-		String text = l.getText_login();
+		String text = loginPage.getText_login();
 
 		Assert.assertEquals(text, "Login");
 
@@ -47,7 +50,7 @@ public class Register_SD{
 		String string2 = Helper.generateRandomText();
 		String string3 = Helper.generateRandomText();
 		String string4 = "Spring*123";
-		rg.doRegisterUser(string, string2, string3, string4);
+		registerpage.doRegisterUser(string, string2, string3, string4);
 	}
 	
 	@When("User enter the all required field")
@@ -60,7 +63,7 @@ public class Register_SD{
 		String string3 = mp.get(i).get("UserName");
 		String string4 = mp.get(i).get("Password");
 		
-		rg.doRegisterUser(string, string2, string3, string4);
+		registerpage.doRegisterUser(string, string2, string3, string4);
 		}
 	}
 

@@ -1,1 +1,2 @@
-file:src/test/resources/PF_Feature/AddToCart.feature:3
+file:src/test/resources/feature/RegisterUser.feature:13:14:15:18:25
+file:src/test/resources/feature/AddToCart.feature:3

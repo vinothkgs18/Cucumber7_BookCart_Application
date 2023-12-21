@@ -1,6 +1,10 @@
 package Util;
 
+import java.util.Random;
+import java.util.stream.IntStream;
+
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.RandomUtils;
 
 public class Helper {
 	
@@ -10,9 +14,11 @@ public class Helper {
 		return randomAlphabetic;
 	}
 	
-	public static void generateRandomNumbers() {
-		double random = Math.random();
-		System.out.println(random);
+	public static int generateRandomNumbers() {
+		Random r= new Random();
+		int nextInt = r.nextInt(12);
+		System.out.println(nextInt);
+		return nextInt;
 	}
 	
 	public static String generateRandomAlphaNumeric() {

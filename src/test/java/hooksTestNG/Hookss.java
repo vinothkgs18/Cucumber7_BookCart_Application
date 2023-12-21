@@ -7,6 +7,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import Util.CommonUtils;
 import Util.DriverInstance;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -25,7 +26,10 @@ public class Hookss  {
 		System.out.println("***********Browser launched*****************");
 		driverInstance=new DriverInstance();
 		driver = driverInstance.initializeBrowserDriver("chrome");
+		CommonUtils commonUtils=new CommonUtils();
 		driver.get("https://bookcart.azurewebsites.net/");
+		
+		commonUtils.initPageFactory();
 		System.out.println("Naviagate to application");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

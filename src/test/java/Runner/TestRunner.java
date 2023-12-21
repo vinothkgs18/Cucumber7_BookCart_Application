@@ -6,11 +6,12 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
-@CucumberOptions(features = {"src/test/resources/PF_Feature/"}, 
-			tags = "not @Regression", 
+@CucumberOptions(features = {"src/test/resources/feature/"}, 
+			/*tags = "@Regression and @RunNow", */
 			glue = {"Stefdefination", "hooksTestNG" },
 			snippets=SnippetType.CAMELCASE,
 			dryRun = !true,
+			monochrome=true,
 			plugin = { "pretty",
 					"html:target/cucumber/report.html/",
 					"json:target/cucumber/report.json",

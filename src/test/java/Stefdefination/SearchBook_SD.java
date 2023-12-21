@@ -12,10 +12,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchBook_SD {
-	public Headerpage hp = new Headerpage(DriverInstance.getDriver());
-	public HomePage hop = new HomePage(DriverInstance.getDriver());
-	public BookDetailPage bp = new BookDetailPage(DriverInstance.getDriver());
-	public Cartpage cp= new Cartpage(DriverInstance.getDriver());
+	public Headerpage hp = Headerpage.getInstance();
+	public HomePage hop = HomePage.getInstance();
+	public BookDetailPage bp = BookDetailPage.getInstance();
+	public Cartpage cp= Cartpage.getInstance();
 	public String bookName = "HP5";
 
 	@Given("User can search the book in header search bar")
